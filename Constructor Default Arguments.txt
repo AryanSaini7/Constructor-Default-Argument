@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class value{
+    int a,b,c;
+    public:
+    value(int x,int y=8,int z=9)//default argument
+    {
+        a=x;
+        b=y;
+        c=z;
+    }
+    void print()
+    {
+        cout<<"Value: "<<a<<" and "<<b<<" and "<<c<<endl;
+    }
+};
+int main()
+{
+    value o(4,5);
+    o.print();
+    value i(1);
+    i.print();
+    value r(0);
+    r.print();
+    
+}
